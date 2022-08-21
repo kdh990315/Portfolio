@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+li, ul, ol {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+
+#fullpage section:nth-of-type(1) h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #f1f1f1;
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 300;
+  transform: skew(var(--skew)) scale(var(--scale));
+}
+#fullpage section:nth-of-type(1) h1::before, #fullpage section:nth-of-type(1) h1::after {
+  content: attr(main_text);
+  position: absolute;
+  width: 100%;
+  transition: -webkit-clip-path 50ms ease-in;
+  transition: clip-path 50ms ease-in;
+  transition: clip-path 50ms ease-in, -webkit-clip-path 50ms ease-in;
+  background-color: #000;
+}
+#fullpage section:nth-of-type(1) h1::before {
+  left: 5px;
+  text-shadow: 2px -2px #2a96d4;
+  -webkit-clip-path: polygon(0 var(--t1), 100% var(--t1), 100% var(--b1), 0 var(--b1));
+          clip-path: polygon(0 var(--t1), 100% var(--t1), 100% var(--b1), 0 var(--b1));
+}
+#fullpage section:nth-of-type(1) h1::after {
+  left: -5px;
+  text-shadow: -2px 2px #cc2a1f;
+  -webkit-clip-path: polygon(0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2));
+          clip-path: polygon(0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2));
+}
