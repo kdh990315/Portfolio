@@ -90,10 +90,10 @@ header nav ul li {
   color: #fff;
 }
 #fullpage section:nth-of-type(3) .charts {
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 #fullpage section:nth-of-type(3) .charts .chart {
   margin: 0 20px;
@@ -104,6 +104,14 @@ header nav ul li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+#fullpage section:nth-of-type(3) .charts .chart h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #fullpage section:nth-of-type(3) .charts .chart svg {
   width: 220px;
