@@ -1,0 +1,6 @@
+						<h4><span>NAME :</span>&nbsp;김동현 / Kim Dong Hyeon</h4>
+						<h4><span>BIRTH :</span>&nbsp;1999.03.15</h4>
+						<h4><span>PHONE :</span>&nbsp;010-5509-3095</h4>
+						<h4><span>EMAIL :</span>&nbsp;kdh990315@naver.com</h4>
+						<h4><span>HOEM :</span>&nbsp;경기도 시흥시</h4>
+						<h4><span>MBTI :</span>&nbsp;Entp</h4>

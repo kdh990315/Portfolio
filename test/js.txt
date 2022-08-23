@@ -1,0 +1,26 @@
+//svg Circle
+	function animationCircle() {
+		var chart = $(".chart");
+
+		chart.each(function () {
+			var title = $(this).find("h2"),
+				targetNum = title.attr("data-num"),
+				circle = $(this).find("circle");
+	
+	
+			$({rate:0}).animate({rate:targetNum},
+			{
+				duration : 1500, //시간 1.5초
+				progress : function () {
+					var now = this.rate,
+						amount = 630 - (630 * now/100);
+					title.text(Math.floor(now));
+	
+					circle.css({strokeDashoffset : amount});
+				}
+			});
+	
+		})
+		excuted = true;
+	}
+

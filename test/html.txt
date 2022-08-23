@@ -1,0 +1,115 @@
+!DOCTYPE html
+html lang=en
+head
+	meta charset=UTF-8
+	meta http-equiv=X-UA-Compatible content=IE=edge
+	meta name=viewport content=width=device-width, initial-scale=1.0
+	titleDocumenttitle
+	
+	script src=httpscode.jquery.comjquery-3.6.0.min.js integrity=sha256-xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDejm4= crossorigin=anonymousscript
+	link rel=stylesheet href=cssjquery.fullPage.css
+	link rel=stylesheet href=cssindex.css
+	script src=jsjquery.fullPage.jsscript
+	script src=jsmain.jsscript
+	script src=jsGlitch.jsscript
+	script src=jssvg_ani.jsscript
+	
+
+head
+body
+	header
+		nav
+			ul
+				li data-menuanchor=section1a href=#section1INTROali
+				li data-menuanchor=section2a href=#section2ABOUT MEali
+				li data-menuanchor=section3a href=#section3WORKali
+				li data-menuanchor=section4a href=#section4section4ali
+				li data-menuanchor=section5a href=#section5footerali
+			ul
+		nav
+	header
+	main id=fullpage
+		section class=section
+			h1 id=Glitch_text main_text=Kim Dong HyeonKim Dong Hyeonh1
+		section
+
+		section class=section
+			div class=about_box
+				div class=about_picture
+					img src=imgii.jpg alt=asd
+				div
+				div class=about_info_box
+					div class=about_info_txt
+						h4
+							안녕하세요. 신입 프론트앤드 개발자 김동현입니다.
+							항상 긍정적이며 책임감 있고 특유의 친화력으로 어느 한 곳으로 휩쓸리지 않고
+							열심히 배우며 좋은 팀원들과 최고의 개발자가 되도록 노력하겠습니다.   
+						h4
+					div
+					div class=about_info
+						h4spanNAME span&nbsp;김동현  Kim Dong Hyeonh4
+						h4spanBIRTH span&nbsp;1999.03.15h4
+						h4spanPHONE span&nbsp;010-5509-3095h4
+						h4spanEMAIL span&nbsp;kdh990315@naver.comh4
+						h4spanHOEM span&nbsp;경기도 시흥시h4
+						h4spanMBTI span&nbsp;Entph4
+					div
+				div
+			div
+			
+		section
+
+		section class=section
+			div class=charts
+				div class=chart
+					h2 data-num=900h2
+					svg
+						circle cx=110 cy=110 r=100circle
+					svg
+					h3HTMLh3
+				div
+				div class=chart
+					h2 data-num=900h2
+					svg
+						circle cx=110 cy=110 r=100circle
+					svg
+					h3CSSh3
+				div
+				div class=chart
+					h2 data-num=850h2
+					svg
+						circle cx=110 cy=110 r=100circle
+					svg
+					h3JQUERYh3
+				div
+				div class=chart
+					h2 data-num=850h2
+					svg
+						circle cx=110 cy=110 r=100circle
+					svg
+					h3JAVASCRIPTh3
+				div
+			div
+		section
+
+		section class=section
+			div class=slide
+				h3slide01h3
+			div
+			div class=slide
+				h3slide02h3
+			div
+			div class=slide
+				h3slide03h3
+			div
+			div class=slide
+				h3slide04h3
+			div
+		section
+
+		footer class=section fp-auto-height
+			h2footerh2
+		footer
+	main
+body
+html

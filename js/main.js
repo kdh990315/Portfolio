@@ -8,6 +8,7 @@ $(function () {
 		navigation: false,
 		navigationPosition: 'right',
 		sectionsColor: ['#000', '#000', '#000', '#000', '#fff'],
+		continuousVertical: true,
 
 		//svg Circle
 		afterLoad: function(anchorLink, index){

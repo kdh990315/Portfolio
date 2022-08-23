@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li, ul , ol {
+	list-style: none;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .6);
+	z-index: 100;
+
+	nav {
+
+		ul {
+			display: flex;
+			justify-content: center;
+
+			li {
+				margin: 0 20px;
+			}
+		}
+	}
+} // header
+
+#fullpage {
+
+	section {
+
+		&:nth-of-type(1) {
+			h1 {
+				text-align: center;
+				font-size: 5rem;
+				color: #f1f1f1;
+				position: relative;
+				font-family: 'Orbitron', sans-serif;
+				font-weight: 300;
+				transform: skew(var(--skew)) scale(var(--scale));
+
+				&::before, &::after {
+					content: attr(main_text);
+					position: absolute;
+					width: 100%;
+					transition: clip-path 50ms ease-in;
+					background-color: #000;
+				}
+
+				&::before {
+					left: 5px;
+					text-shadow: 2px -2px #2a96d4;
+					clip-path: polygon(
+						0 var(--t1), 100% var(--t1), 100% var(--b1), 0 var(--b1)
+					);
+				}
+
+				&::after {
+					left: -5px;
+					text-shadow: -2px 2px #cc2a1f;
+					clip-path: polygon(
+						0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2)
+					);
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			h1 {
+				color: #fff;
+			}
+
+			.about_box {
+				display: flex;
+				margin: 0 auto;
+				width: 1200px;
+				align-items: center;
+				justify-content: space-around;
+				padding: 60px;
+				border: 5px solid #fff;
+				border-radius: 20px;
+				box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+							0 0 15px #0fa, 0 0 45px #0fa, 0 0 45px #0fa, 0 0 55px #0fa, 0 0 95px #0fa,
+							0 0 15px #0fa inset, 0 0 42px #0fa inset, 0 0 52px #0fa inset, 0 0 72px #0fa inset, 0 0 91px #0fa inset;
+
+
+				.about_picture {
+					width: 520px;
+					height: 520px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						border-radius: 500px;
+					}
+				}
+
+				.about_info_box {
+					padding: 0 30px;
+
+					.about_info_txt {
+						width: 500px;
+						padding-bottom: 25px;
+
+						h4 {
+							color: #fff;
+							font-size: 21px;
+							word-break: keep-all;
+							line-height: 32px;
+						}
+					}
+
+
+					.about_info {
+						h4 {
+							color: #fff;
+						}
+					}
+
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+			.charts {
+				width: 1200px;
+				height: 540px;
+				padding: 50px 60px;
+				border: 5px solid #fff;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-radius: 20px;
+
+				box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+							0 0 15px rgb(187, 0, 255), 0 0 45px rgb(187, 0, 255), 0 0 45px rgb(187, 0, 255), 0 0 55px rgb(187, 0, 255), 0 0 95px rgb(187, 0, 255),
+							0 0 15px rgb(187, 0, 255) inset, 0 0 42px rgb(187, 0, 255) inset, 0 0 52px rgb(187, 0, 255) inset, 0 0 72px rgb(187, 0, 255) inset, 0 0 91px rgb(187, 0, 255) inset;
+
+				.chart {
+					margin: 0 20px;
+					position: relative;
+
+					h2 {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						
+						
+					}
+
+					h3 {
+						margin-top: 15px;
+						font-size: 25px;
+						color: #fff;
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						
+					}
+
+					svg {
+						width: 220px;
+						height: 220px;
+
+						circle {
+							fill: #ebebeb;
+							stroke-width: 20;
+							stroke-dasharray: 628;
+							stroke-dashoffset: 628;
+							transform: rotate(-90deg);
+							transform-origin: 50% 50%;
+							stroke-linecap: round;
+						}
+					} 
+
+					&:nth-of-type(1) {
+
+						svg {
+
+							circle {
+								stroke: #bde11c;
+								// stroke: drop-shadow(0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+								// 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa)
+								// sgv의 테두리는 border가 아니고 stroke임.
+								// animation: aa 2s forwards;
+							}
+							// @keyframes aa {
+							// 	from {stroke-dashoffset : 628;}
+							// 	to {stroke-dashoffset : 0;}
+							// }
+						}
+
+						h3 {
+							text-shadow: (0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+						 0 0 15px #de25ff, 0 0 30px #de25ff, 0 0 46px #bde11c, 0 0 70px #bde11c, 0 0 97px #bde11c)
+						}
+					}
+
+					&:nth-of-type(2) {
+
+						circle {
+							stroke: #ff5248; // sgv의 테두리는 border가 아니고 stroke임.
+						}
+
+						h3 {
+							text-shadow: (0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+						 0 0 15px #de25ff, 0 0 30px #de25ff, 0 0 46px #ff5248, 0 0 70px #ff5248, 0 0 97px #ff5248)
+						}
+					}
+
+					&:nth-of-type(3) {
+
+						circle {
+							stroke: #19cdca; // sgv의 테두리는 border가 아니고 stroke임.
+						}
+
+						h3 {
+							text-shadow: (0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+						 0 0 15px #de25ff, 0 0 30px #de25ff, 0 0 46px #19cdca, 0 0 70px #19cdca, 0 0 97px #19cdca)
+						}
+					}
+
+					&:nth-of-type(4) {
+
+						circle {
+							stroke: #4e88e1; // sgv의 테두리는 border가 아니고 stroke임.
+						}
+
+						h3 {
+							text-shadow: (0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+						 0 0 15px #de25ff, 0 0 30px #de25ff, 0 0 46px #4e88e1, 0 0 70px #4e88e1, 0 0 97px #4e88e1)
+						}
+					}
+
+
+				}
+			}
+		}
+
+		&:nth-of-type(4) {
+			h3 {
+				color: #fff;
+			}
+		}
+	}
+}
