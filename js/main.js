@@ -5,9 +5,9 @@ $(function () {
 		anchors:['section1', 'section2', 'section3', 'section4', 'section5'],
 		autoScrolling:true,
 		scrollHorizontally: true,
-		navigation: true,
+		navigation: false,
 		navigationPosition: 'right',
-		sectionsColor: ['#000', '#000', '#ddd', '#eee', '#fff'],
+		sectionsColor: ['#000', '#000', '#000', '#000', '#fff'],
 
 		//svg Circle
 		afterLoad: function(anchorLink, index){
