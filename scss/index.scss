@@ -19,6 +19,7 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			animation: moveStar 240s linear infinite;
+			
 
 			.star {
 				fill: #fff;
@@ -37,12 +38,21 @@
 				}
 			}
 		}
+
+		// 우주선
+		.spaceship {
+			position: fixed;
+			bottom: -100px;
+			left: 850px;
+			width: 300px;
+		}
 	}
 }
 
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 li, ul , ol {
@@ -54,6 +64,7 @@ li, ul , ol {
 	height: 6000px;
 	background-color: #000;
 	position: relative;
+	overflow: hidden;
 
 	@include backSky;
 
@@ -64,7 +75,7 @@ li, ul , ol {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		overflow-x: hidden;
+		overflow: hidden;
 
 
 
@@ -99,6 +110,26 @@ li, ul , ol {
 				text-shadow: -2px 2px #cc2a1f;
 				clip-path: polygon(
 					0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2));
+			}
+		}
+
+		h3 {
+			text-transform: uppercase;
+			position: absolute;
+			top: 58%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+		}
+
+		.earth {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			img {
+				width: 100%;
+				height: 100%;
 			}
 		}
 	}

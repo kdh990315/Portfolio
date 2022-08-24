@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 li, ul, ol {
@@ -14,6 +15,7 @@ li, ul, ol {
   height: 6000px;
   background-color: #000;
   position: relative;
+  overflow: hidden;
 }
 #wrap .backSky {
   width: 100%;
@@ -54,13 +56,19 @@ li, ul, ol {
     transform: translate(-50%, -50%) rotate(20deg);
   }
 }
+#wrap .backSky .spaceship {
+  position: fixed;
+  bottom: -100px;
+  left: 850px;
+  width: 300px;
+}
 #wrap .intro {
   width: 100%;
   height: 1000px;
   position: absolute;
   bottom: 0;
   left: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #wrap .intro h1 {
   text-align: center;
@@ -92,4 +100,22 @@ li, ul, ol {
   text-shadow: -2px 2px #cc2a1f;
   -webkit-clip-path: polygon(0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2));
           clip-path: polygon(0 var(--t2), 100% var(--t2), 100% var(--b2), 0 var(--b2));
+}
+#wrap .intro h3 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#wrap .intro .earth {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#wrap .intro .earth img {
+  width: 100%;
+  height: 100%;
 }
