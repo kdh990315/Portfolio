@@ -49,6 +49,13 @@
 	}
 }
 
+@mixin project_right {
+	margin-left: 30rem;
+	width: 100%;
+	background-color: yellowgreen;
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -131,6 +138,19 @@ li, ul , ol {
 				width: 100%;
 				height: 100%;
 			}
+		}
+	}
+
+	.section01 {
+		width: 100%;
+		height: 3000px;
+		padding: 8rem 8rem 20rem;
+		position: absolute;
+		bottom: 1000px;
+
+		.project01 {
+			
+			@include project_right;
 		}
 	}
 }
