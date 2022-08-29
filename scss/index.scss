@@ -50,10 +50,98 @@
 }
 
 @mixin project_right {
-	margin-left: 30rem;
-	width: 100%;
-	background-color: yellowgreen;
 
+	padding-left: 30rem;
+	width: 100%;
+	height: 500px;
+	background-color: yellowgreen;
+}
+
+@mixin project_left {
+	padding-right: 30rem;
+	width: 100%;
+	height: 500px;
+	background-color: blueviolet;
+
+}
+
+@mixin skill_box {
+
+	.skill_box {
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+		.skill {
+			padding: 3px 8px;
+			border-radius: 9px;
+			background-color: #fff;
+			color: black;
+			margin: 4px 7px 0 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@mixin title {
+
+	.title_box {
+		width: 100%;
+		color: #fff;
+		font-size: 25px;
+		font-weight: 800;
+		padding: 18px 0;
+	}
+}
+
+@mixin main_info {
+	.main_info {
+		width: 40%;
+		padding: 8px 0;
+		display: flex;
+		flex-direction: column;
+
+		.info {
+			font-size: 19px;
+			color: #fff;
+		}
+
+	}
+}
+
+@mixin sub_info {
+
+	.sub_info {
+		width: 40%;
+		padding: 8px 0;
+		display: flex;
+		flex-direction: column;
+
+		.Sinfo {
+			font-size: 19px;
+			color: #fff;
+		}
+	}
+}
+
+@mixin btn_box {
+	.main_btn_box {
+		width: 40%;
+		padding-top: 48px;
+		display: flex;
+
+		.btn {
+			padding: 8px 26px;
+			font-size: 11px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			border: none;
+			border-radius: 20px;
+			background-color: #fff;
+			margin-right: 8px;
+			cursor: pointer;
+		}
+	}
 }
 
 * {
@@ -150,7 +238,22 @@ li, ul , ol {
 
 		.project01 {
 			
+			margin-top: 150px;
 			@include project_right;
+			@include skill_box;
+			@include title;
+			@include main_info;
+			@include sub_info;
+			@include btn_box;
+		}
+
+		.project02 {
+			@include project_left;
+			@include skill_box;
+			@include title;
+			@include main_info;
+			@include sub_info;
+			@include btn_box;
 		}
 	}
 }
