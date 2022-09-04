@@ -121,24 +121,83 @@ li, ul, ol {
 }
 #wrap .section01 {
   width: 100%;
+  height: 1000px;
+  padding: 8rem 8rem 20rem;
+  position: absolute;
+  bottom: 1500px;
+  background-color: rebeccapurple;
+}
+#wrap .section01 .skills_wrap {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+#wrap .section01 .skills_wrap .skills_box {
+  width: 50%;
+  border: 0.2rem solid rgb(0, 173, 181);
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+#wrap .section01 .skills_wrap .skills_box .skills_title {
+  transform: rotate(-10deg);
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+  border: 0.2rem solid rgb(238, 238, 238);
+  color: rgb(0, 173, 181);
+  background-color: rgb(34, 40, 49);
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+#wrap .section01 .skills_wrap .skills_box .skills_txt {
+  line-height: 2rem;
+  color: #fff;
+}
+#wrap .section02 {
+  width: 100%;
   height: 3000px;
   padding: 8rem 8rem 20rem;
   position: absolute;
-  bottom: 1000px;
+  bottom: 2000px;
 }
-#wrap .section01 .project01 {
-  margin-top: 150px;
-  padding-left: 30rem;
+#wrap .section02 .project01 {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 500px;
-  background-color: yellowgreen;
+  justify-content: flex-end;
 }
-#wrap .section01 .project01 .skill_box {
+#wrap .section02 .project01 .project_wrap {
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 0.1rem solid rgb(0, 26, 255);
+  background-color: #0e0f19;
+  border-radius: 30px;
+  position: relative;
+}
+#wrap .section02 .project01 .project_wrap .project_title_right {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 26, 255);
+  border: 0.1rem solid rgb(0, 26, 255);
+  right: -3rem;
+  transform: rotate(10deg);
+  font-weight: 800;
+  position: absolute;
+  border-radius: 2rem;
+  top: -2.5rem;
+  padding: 1rem;
+}
+#wrap .section02 .project01 .project_wrap .left_box .skill_box {
   width: 100%;
   display: flex;
   align-items: center;
 }
-#wrap .section01 .project01 .skill_box .skill {
+#wrap .section02 .project01 .project_wrap .left_box .skill_box .skill {
   padding: 3px 8px;
   border-radius: 9px;
   background-color: #fff;
@@ -146,61 +205,111 @@ li, ul, ol {
   margin: 4px 7px 0 0;
   text-transform: uppercase;
 }
-#wrap .section01 .project01 .title_box {
+#wrap .section02 .project01 .project_wrap .left_box .main_info {
   width: 100%;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 800;
-  padding: 18px 0;
+  padding: 48px 0 10px 0;
+  display: flex;
+  flex-direction: column;
 }
-#wrap .section01 .project01 .main_info {
-  width: 40%;
+#wrap .section02 .project01 .project_wrap .left_box .main_info .info {
+  font-size: 19px;
+  color: #fff;
+}
+#wrap .section02 .project01 .project_wrap .left_box .sub_info {
+  width: 100%;
   padding: 8px 0;
   display: flex;
   flex-direction: column;
 }
-#wrap .section01 .project01 .main_info .info {
-  font-size: 19px;
+#wrap .section02 .project01 .project_wrap .left_box .sub_info .Sinfo {
+  font-size: 15px;
   color: #fff;
 }
-#wrap .section01 .project01 .sub_info {
-  width: 40%;
-  padding: 8px 0;
+#wrap .section02 .project01 .project_wrap .left_box .main_btn_box {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  bottom: -15px;
+  right: 63px;
 }
-#wrap .section01 .project01 .sub_info .Sinfo {
-  font-size: 19px;
-  color: #fff;
-}
-#wrap .section01 .project01 .main_btn_box {
-  width: 40%;
-  padding-top: 48px;
-  display: flex;
-}
-#wrap .section01 .project01 .main_btn_box .btn {
+#wrap .section02 .project01 .project_wrap .left_box .main_btn_box .btn_left {
   padding: 8px 26px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
   border: none;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: rgb(0, 255, 148);
   margin-right: 8px;
   cursor: pointer;
+  color: #0e0f19;
 }
-#wrap .section01 .project02 {
-  padding-right: 30rem;
+#wrap .section02 .project01 .project_wrap .left_box .main_btn_box .btn_left:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project01 .project_wrap .left_box .main_btn_box .btn_right {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 26, 255);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+#wrap .section02 .project01 .project_wrap .left_box .main_btn_box .btn_right:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project01 .project_wrap .rigth_box .project_img_box1 {
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+#wrap .section02 .project01 .project_wrap .rigth_box .project_img_box1 img {
+  width: 100%;
+}
+#wrap .section02 .project02 {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 500px;
-  background-color: blueviolet;
 }
-#wrap .section01 .project02 .skill_box {
+#wrap .section02 .project02 .project_wrap {
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 0.1rem solid rgb(0, 255, 148);
+  background-color: #0e0f19;
+  border-radius: 30px;
+  position: relative;
+}
+#wrap .section02 .project02 .project_wrap .project_title_left {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 148);
+  border: 0.1rem solid rgb(0, 255, 148);
+  left: -3rem;
+  transform: rotate(-10deg);
+  font-weight: 800;
+  position: absolute;
+  border-radius: 2rem;
+  top: -2rem;
+  padding: 1rem;
+}
+#wrap .section02 .project02 .project_wrap .left_box {
+  width: 620px;
+}
+#wrap .section02 .project02 .project_wrap .left_box .skill_box {
   width: 100%;
   display: flex;
   align-items: center;
 }
-#wrap .section01 .project02 .skill_box .skill {
+#wrap .section02 .project02 .project_wrap .left_box .skill_box .skill {
   padding: 3px 8px;
   border-radius: 9px;
   background-color: #fff;
@@ -208,46 +317,293 @@ li, ul, ol {
   margin: 4px 7px 0 0;
   text-transform: uppercase;
 }
-#wrap .section01 .project02 .title_box {
+#wrap .section02 .project02 .project_wrap .left_box .main_info {
   width: 100%;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 800;
-  padding: 18px 0;
+  padding: 48px 0 10px 0;
+  display: flex;
+  flex-direction: column;
 }
-#wrap .section01 .project02 .main_info {
-  width: 40%;
+#wrap .section02 .project02 .project_wrap .left_box .main_info .info {
+  font-size: 19px;
+  color: #fff;
+}
+#wrap .section02 .project02 .project_wrap .left_box .sub_info {
+  width: 100%;
   padding: 8px 0;
   display: flex;
   flex-direction: column;
 }
-#wrap .section01 .project02 .main_info .info {
-  font-size: 19px;
+#wrap .section02 .project02 .project_wrap .left_box .sub_info .Sinfo {
+  font-size: 15px;
   color: #fff;
 }
-#wrap .section01 .project02 .sub_info {
-  width: 40%;
-  padding: 8px 0;
+#wrap .section02 .project02 .project_wrap .left_box .main_btn_box {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  bottom: -15px;
+  right: 63px;
 }
-#wrap .section01 .project02 .sub_info .Sinfo {
-  font-size: 19px;
-  color: #fff;
-}
-#wrap .section01 .project02 .main_btn_box {
-  width: 40%;
-  padding-top: 48px;
-  display: flex;
-}
-#wrap .section01 .project02 .main_btn_box .btn {
+#wrap .section02 .project02 .project_wrap .left_box .main_btn_box .btn_left {
   padding: 8px 26px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
   border: none;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: rgb(0, 255, 148);
   margin-right: 8px;
   cursor: pointer;
+  color: #0e0f19;
+}
+#wrap .section02 .project02 .project_wrap .left_box .main_btn_box .btn_left:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project02 .project_wrap .left_box .main_btn_box .btn_right {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 26, 255);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+#wrap .section02 .project02 .project_wrap .left_box .main_btn_box .btn_right:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project02 .project_wrap .rigth_box .project_img_box2 {
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+#wrap .section02 .project02 .project_wrap .rigth_box .project_img_box2 img {
+  width: 100%;
+}
+#wrap .section02 .project03 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  justify-content: flex-end;
+}
+#wrap .section02 .project03 .project_wrap {
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 0.1rem solid rgb(0, 26, 255);
+  background-color: #0e0f19;
+  border-radius: 30px;
+  position: relative;
+}
+#wrap .section02 .project03 .project_wrap .project_title_right {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 26, 255);
+  border: 0.1rem solid rgb(0, 26, 255);
+  right: -3rem;
+  transform: rotate(10deg);
+  font-weight: 800;
+  position: absolute;
+  border-radius: 2rem;
+  top: -2.5rem;
+  padding: 1rem;
+}
+#wrap .section02 .project03 .project_wrap .left_box .skill_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#wrap .section02 .project03 .project_wrap .left_box .skill_box .skill {
+  padding: 3px 8px;
+  border-radius: 9px;
+  background-color: #fff;
+  color: black;
+  margin: 4px 7px 0 0;
+  text-transform: uppercase;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_info {
+  width: 100%;
+  padding: 48px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_info .info {
+  font-size: 19px;
+  color: #fff;
+}
+#wrap .section02 .project03 .project_wrap .left_box .sub_info {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+#wrap .section02 .project03 .project_wrap .left_box .sub_info .Sinfo {
+  font-size: 15px;
+  color: #fff;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_btn_box {
+  display: flex;
+  position: absolute;
+  bottom: -15px;
+  right: 63px;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_btn_box .btn_left {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 255, 148);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #0e0f19;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_btn_box .btn_left:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_btn_box .btn_right {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 26, 255);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+#wrap .section02 .project03 .project_wrap .left_box .main_btn_box .btn_right:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project03 .project_wrap .rigth_box .project_img_box3 {
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+#wrap .section02 .project03 .project_wrap .rigth_box .project_img_box3 img {
+  width: 100%;
+}
+#wrap .section02 .project04 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+#wrap .section02 .project04 .project_wrap {
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 0.1rem solid rgb(0, 255, 148);
+  background-color: #0e0f19;
+  border-radius: 30px;
+  position: relative;
+}
+#wrap .section02 .project04 .project_wrap .project_title_left {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 148);
+  border: 0.1rem solid rgb(0, 255, 148);
+  left: -3rem;
+  transform: rotate(-10deg);
+  font-weight: 800;
+  position: absolute;
+  border-radius: 2rem;
+  top: -2rem;
+  padding: 1rem;
+}
+#wrap .section02 .project04 .project_wrap .left_box {
+  width: 620px;
+}
+#wrap .section02 .project04 .project_wrap .left_box .skill_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#wrap .section02 .project04 .project_wrap .left_box .skill_box .skill {
+  padding: 3px 8px;
+  border-radius: 9px;
+  background-color: #fff;
+  color: black;
+  margin: 4px 7px 0 0;
+  text-transform: uppercase;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_info {
+  width: 100%;
+  padding: 48px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_info .info {
+  font-size: 19px;
+  color: #fff;
+}
+#wrap .section02 .project04 .project_wrap .left_box .sub_info {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+#wrap .section02 .project04 .project_wrap .left_box .sub_info .Sinfo {
+  font-size: 15px;
+  color: #fff;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_btn_box {
+  display: flex;
+  position: absolute;
+  bottom: -15px;
+  right: 63px;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_btn_box .btn_left {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 255, 148);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #0e0f19;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_btn_box .btn_left:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_btn_box .btn_right {
+  padding: 8px 26px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 26, 255);
+  margin-right: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+#wrap .section02 .project04 .project_wrap .left_box .main_btn_box .btn_right:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+#wrap .section02 .project04 .project_wrap .rigth_box .project_img_box4 {
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+#wrap .section02 .project04 .project_wrap .rigth_box .project_img_box4 img {
+  width: 100%;
 }
