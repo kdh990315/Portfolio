@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 @mixin backSky {
@@ -7,7 +14,7 @@
 	.backSky {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to right, #111, #0e0f19);  
+		// background: linear-gradient(to right, #111, #0e0f19);  
 		overflow: hidden;
 
 		/* 별을 감싼 부모 */
@@ -45,6 +52,24 @@
 			bottom: -100px;
 			left: 850px;
 			width: 300px;
+		}
+
+		// UFO
+		.UFO {
+			position: fixed;
+			top: 210px;
+			width: 280px;
+			left: 450px;
+			transform: rotate(-10deg);
+		}
+
+		//alien 
+		.alien {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100px;
+			transform: rotate(90deg);
 		}
 	}
 }
@@ -193,6 +218,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "HallymGothic-Regular";
+	
 }
 
 li, ul , ol {
@@ -201,8 +228,10 @@ li, ul , ol {
 
 #wrap {
 	width: 100%;
-	height: 6000px;
-	background-color: #000;
+	height: 10000px;
+	// background-color: #000;
+	background: rgb(14,15,25);
+	background: linear-gradient(0deg, rgba(14,15,25,1) 0%, rgba(30,7,64,1) 47%, rgba(27,6,60,1) 70%, rgba(101,32,14,1) 97%, rgba(97,26,7,1) 100%);
 	position: relative;
 	overflow: hidden;
 
@@ -280,7 +309,17 @@ li, ul , ol {
 		padding: 8rem 8rem 20rem;
 		position: absolute;
 		bottom: 1500px;
-		background-color: rebeccapurple;
+
+		.section01_title {
+			width: 100%;
+
+			h1 {
+				text-align: center;
+				font-size: 3rem;
+				color: #fff;
+				padding-bottom: 90px;
+			}
+		}
 
 
 		.skills_wrap {
@@ -305,7 +344,7 @@ li, ul , ol {
 					color: rgb(0, 173, 181);
 					background-color: rgb(34, 40, 49);
 					padding: 0.5rem 1rem;
-					font-size: 1.7rem;
+					font-size: 1.4rem;
 					font-weight: 800;
 				}
 	
@@ -325,7 +364,7 @@ li, ul , ol {
 		height: 3000px;
 		padding: 8rem 8rem 20rem;
 		position: absolute;
-		bottom: 2000px;
+		bottom: 3500px;
 
 		.project01 {
 			display: flex;
@@ -333,7 +372,7 @@ li, ul , ol {
 			width: 100%;
 			height: 500px;
 			justify-content: flex-end;
-
+			margin-top: 350px;
 
 			.project_wrap {
 				width: 1300px;
@@ -380,6 +419,7 @@ li, ul , ol {
 			align-items: center;
 			width: 100%;
 			height: 500px;
+			margin-top: 350px;
 
 			.project_wrap {
 				width: 1300px;
@@ -428,6 +468,7 @@ li, ul , ol {
 			width: 100%;
 			height: 500px;
 			justify-content: flex-end;
+			margin-top: 350px;
 
 			.project_wrap {
 				width: 1300px;
@@ -473,6 +514,7 @@ li, ul , ol {
 			align-items: center;
 			width: 100%;
 			height: 500px;
+			margin-top: 350px;
 
 			.project_wrap {
 				width: 1300px;
@@ -511,6 +553,103 @@ li, ul , ol {
 				}
 			}
 
+		}
+
+	}
+
+	.section03 {
+		width: 100%;
+		height: 1000px;
+		padding: 8rem 8rem 20rem;
+		position: absolute;
+		bottom: 6500px;
+
+		.profile_wrap {
+			width: 1250px;
+			margin: 0 auto;
+			border: 3px solid #fff;
+			padding: 40px 60px;
+			border-radius: 30px;
+			background-color: #0e0f19;
+			
+
+			.profile_top {
+				display: flex;
+				justify-content: space-between;
+				height: 256px;
+
+				.picture {
+					width: 300px;
+					height: 100%;
+					position: relative;
+
+					img {
+						width: 190px;
+						height: 256px;
+						border-radius: 20px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				.profile_info {
+					width: 800px;
+					height: 100%;
+					color: #fff;
+
+					
+					i {
+						font-size: 14px;
+					}
+
+					.info_name {
+
+						h2 {
+							letter-spacing: 23px;
+							line-height: 45px;
+							font-size: 30px;
+							margin-bottom: 5px;
+						}
+
+						p {
+							margin-bottom: 30px;
+						}
+					}
+
+					.info_txt1_box {
+						display: flex;
+						width: 100%;
+
+						.info_txt1 {
+							margin-right: 30px;
+						}
+					}
+
+					.career {
+						margin-top: 30px;
+
+						.carrer_txt {
+							line-height: 27px;
+						}
+					}
+				}
+			}
+
+			.profile_bottom {
+				width: 100%;
+				margin-top: 50px;
+				text-align: center;
+
+				p {
+					line-height: 33px;
+					color: #f1f1f1;
+					font-size: 20px;
+					letter-spacing: 4px;
+					padding: 0 55px;
+				}
+			}
 		}
 	}
 }
